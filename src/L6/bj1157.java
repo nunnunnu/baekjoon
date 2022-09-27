@@ -1,13 +1,17 @@
 package L6;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class bj1157 {
 
-	public static void main(String[] args) {
-		Scanner s = new Scanner(System.in);	
-		String str = s.next().toUpperCase();
+	public static void main(String[] args) throws IOException {
+//		Scanner s = new Scanner(System.in);	
+//		String str = s.next().toUpperCase();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String str = br.readLine().toUpperCase();
 		char[] c = new char[26];
 		for(int i=0;i<26;i++) {
 			c[i] = (char) (65+i);
